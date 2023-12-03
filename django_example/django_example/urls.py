@@ -18,6 +18,8 @@ from rest_framework.routers import DefaultRouter
 from rest.views import TareaViewSet
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.response import Response
+
 
 router = DefaultRouter()
 router.register(r'tareas', TareaViewSet)
